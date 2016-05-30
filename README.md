@@ -26,9 +26,9 @@ HeaderView Label Name
 	YFMetroListBox *metroListBox = [[YFMetroListBox alloc] initWithFrame:frame];
 
 ####3.Property:<p/>
-    YFMetroListBoxType metroListBoxType.
-    set YFMetroListBoxTypeAllAlphabet: just like first picture above;
-    set YFMetroListBoxTypeGroupName: just like first picture above;
+	YFMetroListBoxType metroListBoxType.
+    	set YFMetroListBoxTypeAllAlphabet: just like first picture above;
+    	set YFMetroListBoxTypeGroupName  : just like second picture above;
 
 
   	CGSize itemSize                 //Each Item Size
@@ -38,19 +38,19 @@ HeaderView Label Name
 
 
 ####5.protocol:<p/>
-@protocol YFMetroListBoxDelegate <NSObject>
-@required
+@protocol YFMetroListBoxDelegate <NSObject><p/>
+@required<p/>
 // return list of section titles to display in index view
-- (NSArray<NSString *> *)sectionIndexTitlesForYFMetroListBox:(YFMetroListBox *)metroListBox;
+- (NSArray<NSString *> *)sectionIndexTitlesForYFMetroListBox:(YFMetroListBox *)metroListBox;<p/>
 @end
 
     
     metroListBox.listBoxDelegate = self;
 
 ####5.notice:<p/>
-Please make sure that the HeaderView is Visible.
-You can set HeaderView using either tableView:titleForHeaderInSection:  or
-    tableView:viewForHeaderInSection: in UIScrollViewDelegate.
+Please make sure that the HeaderView is Visible.<p/>
+You can set HeaderView using either tableView:titleForHeaderInSection:  or<p/>
+    tableView:viewForHeaderInSection: in UIScrollViewDelegate.<p/>
 And set HeaderView's Height using tableView:heightForHeaderInSection or property sectionHeaderHeight;
 
 
