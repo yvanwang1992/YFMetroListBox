@@ -37,7 +37,7 @@ HeaderView Label Name
     
 
 
-####5.protocol:<p/>
+####4.protocol:<p/>
 @protocol YFMetroListBoxDelegate <NSObject><p/>
 @required<p/>
 // return list of section titles to display in index view
